@@ -11,4 +11,4 @@ This is an example of structuring your files with [Webpack](https://webpack.gith
 
 The Webpack Dev Server automatically watches for changes and will live-reload your work.
 
-Keep in mind, Webpack Dev Server uses caching and builds what's new on the fly rather than recompiling your bundle.js file. If you're wanting share your work, make sure to recompile your bundle.js file by running `webpack` in the root folder of your project before pushing it up.
+Keep in mind, Webpack Dev Server uses caching and builds what's new on the fly rather than recompiling your bundle.js file. If you're wanting to share your work, make sure to recompile your bundle.js file by running `webpack` in the root folder of your project before pushing it up.
