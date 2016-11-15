@@ -82,7 +82,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n    background: red;\n}", ""]);
+	exports.push([module.id, "body {\n    background: #ccc;\n}", ""]);
 
 	// exports
 
@@ -399,7 +399,7 @@
 /* 5 */
 /***/ function(module, exports) {
 
-	module.exports = "It works from content.js.";
+	module.exports = "Hello World!";
 
 /***/ }
 /******/ ]);
