@@ -9,3 +9,5 @@ This is an example of structuring your files with [Webpack](https://webpack.gith
 1. Step out of the app folder. `../` and run `webpack-dev-server --progress --colors`
 
 The Webpack Dev Server automatically watches for changes and will live reload your work at [http://localhost:8080/webpack-dev-server/bundle](http://localhost:8080/webpack-dev-server/bundle).
+
+Keep in mind, Webpack Dev Server uses caching and builds what's new on the fly rather than recompiling your bundle.js file. If you're wanting to push up and share your work, make sure to recompile your bundle.js file by running `webpack` in the root folder of your project.
