@@ -1,6 +1,6 @@
-# Development
+# Webpack Development
 
-Here are the steps to run and work on this app locally.
+This is an example of structuring your files with [Webpack](https://webpack.github.io/). Here are the steps to run and work on this app locally.
 
 1. From the the command line, navigate to a folder where you'd like to keep your local repo.
 1. Run `git clone git@github.com:nathantbaker/webpack-testing.git`
