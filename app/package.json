@@ -1,5 +1,5 @@
 {
-  "name": "Webpack Dev Configuration",
+  "name": "module-name",
   "version": "0.1.0",
   "description": "Nathan T. Baker's configuration for Webpack",
   "main": "index.html",
