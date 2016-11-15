@@ -1,6 +1,6 @@
 {
   "name": "module-name",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Nathan T. Baker's configuration for Webpack",
   "main": "index.html",
   "scripts": {
