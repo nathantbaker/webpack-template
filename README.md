@@ -4,8 +4,7 @@ This is an example of structuring your files with [Webpack](https://webpack.gith
 
 1. From the the command line, navigate to a folder where you'd like to keep your local repo.
 1. Run `git clone git@github.com:nathantbaker/webpack-template.git`
-1. Navigate to the app folder. `cd app`
-1. Run `npm install`
+1. Navigate to the app folder `cd app` and run `npm install`.
 1. Step out of the app folder `../` and run `webpack-dev-server --progress --colors`
 1. View your app at [http://localhost:8080/webpack-dev-server/bundle](http://localhost:8080/webpack-dev-server/bundle)
 
