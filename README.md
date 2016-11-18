@@ -1,4 +1,4 @@
-# Webpack Development
+# Notes about Webpack
 
 This is an example of structuring your files with [Webpack](https://webpack.github.io/). This is a barebones app that can be used to build out a project.
 
