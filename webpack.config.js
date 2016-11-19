@@ -1,19 +1,30 @@
-const path = require('path');
 
 module.exports = {
-  entry: "./app/js/controller.js",
+  entry: "./js/controller.js",
   output: {
-    path: './dist',
-    filename: 'bundle.js'
+    filename: './dist/bundle.js'
   },
   module: {
+    preLoaders:[
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "jshint-loader"
+      }
+    ],
     loaders: [
-      { test: /\.css$/, loader: 'style!css'}
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
+      }
     ]
   },
   resolve: {
     alias: {
       'jquery': '../node_modules/jquery/src/jquery.js'
     }
+  },
+  jshint: {
+    strict: "global"
   }
 };
