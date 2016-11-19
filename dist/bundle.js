@@ -44,12 +44,12 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict'; // 'strict-loader' handles the other modules
+	'use strict';
 
 	// Requires
-	__webpack_require__(1),
+	__webpack_require__(1);
 	__webpack_require__(5);
-	__webpack_require__(7);
+
 
 /***/ },
 /* 1 */
@@ -67,8 +67,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./style.css", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./style.css");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./style.scss", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js!./style.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -86,7 +86,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n    background: #ccc;\n}", ""]);
+	exports.push([module.id, "body {\n  background: #ccc; }\n", ""]);
 
 	// exports
 
@@ -405,11 +405,10 @@
 
 	'use strict';
 
-	console.log("model.js loads");
-
 	// Requires
 	__webpack_require__(6);
-	__webpack_require__(7);
+
+
 
 /***/ },
 /* 6 */
@@ -417,12 +416,10 @@
 
 	'use strict';
 
-	console.log("view.js loads");
-
 	// Requires
 	__webpack_require__(7);
 
-	$("#container").html("what asfdd111");
+	$("#container").html("hello world");
 
 /***/ },
 /* 7 */
