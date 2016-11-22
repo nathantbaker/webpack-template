@@ -4,8 +4,7 @@
   "description": "Nathan T. Baker's configuration for Webpack",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --output-public-path=/app/"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nathan T. Baker",
   "license": "ISC",
