@@ -1,6 +1,6 @@
 'use strict';
 
 // Requires
-require('jquery');
+require('jquery-path');
 
 $("#entry").html("hello world");
