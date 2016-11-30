@@ -1,8 +1,10 @@
-
 module.exports = {
-  entry: "./js/controller.js",
+  // the first path enables hot reloading of the app
+  entry: ["webpack/hot/dev-server" , "./js/controller.js"],
   output: {
-    filename: './dist/bundle.js'
+    path: "./dist",
+    publicPath: "/dist/",
+    filename: 'bundle.js'
   },
   module: {
     preLoaders:[
@@ -21,7 +23,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'jquery': '../node_modules/jquery/src/jquery.js'
+      // used when requiring jquery in modules
+      'jquery-path': '../node_modules/jquery/src/jquery.js'
     }
   }
 };
