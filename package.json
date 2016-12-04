@@ -8,13 +8,26 @@
     "url": "https://github.com/nathantbaker/webpack-template"
   },
   "scripts": {
+
+    "//": "INSTALL SCRIPT",
+    "//": "Before installing node modules, open URL, and run Webpack Dev Server",
     "postinstall": "open http://localhost:9966/webpack-dev-server/ && webpack-dev-server --progress --content-base ./ --port 9966 --hot",
+
+    "//": "WEBPACK DEV SERVER SCRIPTS",
     "prestart": "open http://localhost:9966/webpack-dev-server/",
     "start": "webpack-dev-server --progress --content-base ./ --port 9966 --hot",
     "stop": "pkill -f webpack-dev-server",
     "restart": "pkill -f webpack-dev-server; webpack-dev-server --progress --content-base ./ --port 9966 --hot",
-    "build": "webpack",
+
+    "//": "COMPILE SCRIPTS",
+    "compile": "webpack",
     "watch": "webpack --watch",
+
+    "//": "BUILD SCRIPT",
+    "//": "This script creates a css file in the dist folder, compiles code with webpack, and moves the index file over.",
+    "build": "npm-sass ./sass/style.scss > ./dist/css/style.css && NODE_ENV=production node node_modules/.bin/webpack && cp index.html dist/index.html",
+
+    "//": "TESTING SCRIPT",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nathan T. Baker",
@@ -23,10 +36,12 @@
     "bootstrap": "^3.3.7",
     "css-loader": "^0.25.0",
     "extract-loader": "^0.1.0",
+    "file-loader": "^0.9.0",
     "jquery": "^3.1.1",
     "jshint": "^2.9.4",
     "jshint-loader": "^0.8.3",
     "node-sass": "^3.13.0",
+    "npm-sass": "^1.3.0",
     "raw-loader": "^0.5.1",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
