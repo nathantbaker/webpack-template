@@ -14,8 +14,9 @@ In this project, the Webpack Dev Server is configured to live-reload changes you
 * **`npm restart`** Stop and then start Webpack Dev Server
 
 ### Compile Code
-* **`npm run build`** Export code to the `dist` folder.
-* **`npm run watch`** Automatically compile each time there is a change.
+* **`npm run compile`** Compile once to see changes live reload in Webpack Dev Server
+* **`npm run watch`** Compile continuously to see changes live reload in Webpack Dev Server
+* **`npm run build`** Compile all required production assets to dist folder
 
 ### Linting
 `jshint` runs in the background and will halt watch functionality until code is lint free. You can supress specific errors across the project in the `js/.jshintrc` file.
