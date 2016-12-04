@@ -1,3 +1,5 @@
+let ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 module.exports = {
   // the first path enables hot reloading of the app
   entry: ["webpack/hot/dev-server" , "./js/controller.js"],
@@ -18,9 +20,15 @@ module.exports = {
       {
         test: /\.scss$/,
         loaders: ["style", "css", "sass"]
+      },
+      { test: /\.css$/,
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader")
       }
     ]
   },
+  plugins: [
+    new ExtractTextPlugin("styles.css")
+  ],
   resolve: {
     alias: {
       // used when requiring jquery in modules

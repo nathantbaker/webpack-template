@@ -5,7 +5,6 @@ In the root folder, run `npm install`.
 This will download dependencies, open [http://localhost:9966/webpack-dev-server/](http://localhost:9966/webpack-dev-server/) where the app will load in a few seconds, and boot up `webpack-dev-server` for you.
 
 ## Developement Environment
-
 This app uses [Webpack](https://webpack.github.io/) to modularize code and automate tasks. NPM scripts are configured in the `package.json` file. They are being used so you can easily access commands of local node modules without having to install anything globally. Webpack is being configured in `webpack.config.js`.
 
 ### Webpack Dev Server
@@ -17,5 +16,6 @@ In this project, the Webpack Dev Server is configured to live-reload changes you
 ### Compile Code
 * **`npm run build`** Export code to the `dist` folder.
 * **`npm run watch`** Automatically compile each time there is a change.
+
 ### Linting
 `jshint` runs in the background and will halt watch functionality until code is lint free. You can supress specific errors across the project in the `js/.jshintrc` file.
