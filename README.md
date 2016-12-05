@@ -16,7 +16,9 @@ In this project, the Webpack Dev Server is configured to live-reload changes you
 ### Compile Code
 * **`npm run compile`** Compile once to see changes live reload in Webpack Dev Server
 * **`npm run watch`** Compile continuously to see changes live reload in Webpack Dev Server
-* **`npm run build`** Compile all required production assets to dist folder
 
 ### Linting
 `jshint` runs in the background and will halt watch functionality until code is lint free. You can supress specific errors across the project in the `js/.jshintrc` file.
+
+### Production
+If you're deploying your app, read the `PRODUCTION-README` in the  `dist` folder. `npm run build` sends the right production assets to the dist folder, but you'll still need to change a few lines of code here and there with this current configuration.
