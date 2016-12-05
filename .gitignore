@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 npm-debug.log
-# Ignore the dist folder except the bundle.js file
+# dist folder exceptions:
 dist/*
-!dist/bundle.js
+!dist/css/bundle.css
+!PRODUCTION-README.md
