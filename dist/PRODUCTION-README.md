@@ -1,7 +1,6 @@
 # How to Get Your Project Ready for Production
 `npm run build` sends the right production assets to the dist folder, but you'll still need to change a few lines of code here and there with this current configuration to re-connect the right things.
 
-1. In `webpack.config.js` change `entry: ["webpack/hot/dev-server", "./js/controller.js"],` to `entry: "./js/controller.js",` to disable Hot Module Replacement, which only Webpack uses.
 1. Run `npm run build`. Keep in mind running this again after making changes in the `dist` folder will overwrite them.
 1. In `dist/css/style.css` delete the `@import url("/node_modules/bootstrap/dist/css/bootstrap.min.css");` line.
 1. In `dist/index.html`, add a ` <link rel="stylesheet" href="css/bundle.css">` css script.
